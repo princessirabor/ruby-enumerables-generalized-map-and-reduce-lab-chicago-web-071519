@@ -9,7 +9,7 @@ end
 
 def reduce(source_array,start_val = 0 )
   source_array.length.times do |index|
-     yield (source_array[index])
+     yield 
   end
 end
 #map(source_array) do |index|
