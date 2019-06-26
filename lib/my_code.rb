@@ -10,12 +10,12 @@ end
 def reduce(source_array,start_val = 0 )
   i = 0;
   value = start_val
-  p "#{!!start_val}"
   while i < source_array.length do 
-    if source_array[i] == nil
-      source_array[i] = !!source_array[i]
-    end
+    #if source_array[i] == nil
+    #  source_array[i] = !!source_array[i]
+    #end
     value = yield(source_array[i],value)
+    p "#{value}"
     i=i+1
   end
   value
