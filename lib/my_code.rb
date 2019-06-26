@@ -10,7 +10,7 @@ end
 def reduce(source_array,start_val = 0 )
   i = 0;
   value = start_val
-  p "#{start_val}"
+  p "#{start_val && source_array[2]}"
   while i < source_array.length do 
     if source_array[i] == nil
       source_array[i] = !!source_array[i]
