@@ -19,8 +19,8 @@ def reduce(source_array,start_val = 0 )
   end
   value
 end
-#map(source_array) do |index|
-#  index *(-1)
+#reduce(source_array) do |index, n|
+#  index && n
 #end
 
 #map([1, 2, 3, -9]){|n| n * n}
