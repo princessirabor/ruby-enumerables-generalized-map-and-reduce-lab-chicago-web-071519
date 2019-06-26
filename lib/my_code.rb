@@ -9,11 +9,13 @@ end
 
 def reduce(source_array,start_val = 0 )
   i = 0;
+  value = start_val
   while i < source_array.length do 
-    yield(source_array[i],start_val)
+    value = yield(source_array[i], start_val)
     i=i+-1
     
   end
+  value
 end
 #map(source_array) do |index|
 #  index *(-1)
