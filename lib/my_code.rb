@@ -14,7 +14,7 @@ def reduce(source_array,start_val = 0 )
     value = yield(source_array[i],value)
     i=i+1
   end
-  value
+  !!value
 end
 #map(source_array) do |index|
 #  index *(-1)
