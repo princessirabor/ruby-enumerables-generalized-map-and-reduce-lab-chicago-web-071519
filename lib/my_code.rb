@@ -8,8 +8,9 @@ def map(source_array)
 end
 
 def reduce(source_array,start_val = 0 )
-  source_array.length.times do |index|
-     yield 
+  
+  source_array.length -1).times do |index|
+     value = yield (source_array[])
   end
 end
 #map(source_array) do |index|
