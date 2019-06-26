@@ -10,7 +10,7 @@ end
 def reduce(source_array,start_val = 0 )
   
   (source_array.length).times do |index|
-     value = yield (source_array[index])
+     value = yield (start_val, source_array[index])
   end
   value
 end
